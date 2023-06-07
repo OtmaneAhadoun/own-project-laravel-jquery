@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    scroll-behavior: smooth;
+}
+input:focus + span >span{
+    width: 100%;
+}
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #6c7ae0 rgb(225, 225, 225);
+    background-color: transparent;
+}
+*::-webkit-scrollbar{
+    width: 10px ;
+}
+*::-webkit-scrollbar-track{
+    background-color: rgb(225, 225, 225);
+}
+*::-webkit-scrollbar-thumb{
+    border: 2px solid rgb(225, 225, 225);
+    background-color:#6c7ae0;
+}
+.elips{
+    display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+.elips2{
+    display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
